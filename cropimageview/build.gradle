@@ -1,14 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
-
-buildscript {
-  repositories {
-    jcenter( )
-  }
-  dependencies {
-    classpath 'com.novoda:bintray-release:0.3.4'
-  }
-}
 
 android {
   compileSdkVersion 23
@@ -28,15 +18,4 @@ android {
 
 dependencies {
   compile 'com.android.support:support-annotations:23.1.0'
-}
-
-publish {
-  userOrg = 'cesards'
-  repoName = 'maven'
-  artifactId = 'CropImageView'
-  groupId = 'com.cesards.android'
-  publishVersion = '1.0.2'
-  desc = 'Widget allows you crop from whatever side in an ImageView. Currently Android only supports centerCrop type of cropping'
-  licences = ["Apache-2.0"]
-  website = 'https://github.com/cesards/CropImageView'
 }

@@ -1,37 +1,26 @@
 apply plugin: 'com.android.application'
-apply plugin: 'hugo'
-
-buildscript {
-  repositories {
-    jcenter( )
-  }
-
-  dependencies {
-    classpath 'com.jakewharton.hugo:hugo-plugin:1.2.0'
-  }
-}
 
 android {
-  compileSdkVersion 23
-  
-  defaultConfig {
-    applicationId 'com.cesards.android.samples.cropimageview'
-    minSdkVersion 14
-    targetSdkVersion 23
-    versionCode 102
-    versionName "1.0.2"
-  }
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_7
-    targetCompatibility JavaVersion.VERSION_1_7
-  }
+    compileSdkVersion 23
 
-  productFlavors {}
+    defaultConfig {
+        applicationId 'com.cesards.android.samples.cropimageview'
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 102
+        versionName "1.0.2"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    productFlavors {}
 }
 
 dependencies {
-  compile 'com.android.support:appcompat-v7:23.1.0'
-  compile 'com.jakewharton:butterknife:6.1.0'
-  compile 'com.cesards.android:foregroundviews:1.0.0'
-  compile project(':cropimageview')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.cesards.android:foregroundviews:1.0.0'
+    compile project(':cropimageview')
 }
